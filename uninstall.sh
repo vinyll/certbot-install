@@ -2,7 +2,8 @@
 
 ROOT=~/.certbot-src
 
-rm -fr $ROOT
+# Remove symbolic link and source folder.
 sudo rm /usr/local/bin/certbot
+rm -fr $ROOT
 
-echo "certbot manual install was cleared."
+echo "Source based CertBot installation removed."

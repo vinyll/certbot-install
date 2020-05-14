@@ -13,12 +13,12 @@ CHECK_PACKAGES='python3-venv'
 if ! dpkg -s $CHECK_PACKAGES >/dev/null 2>&1; then
   echo "The packages '$CHECK_PACKAGES' are not installed. "
   echo "They will now be installed automatically with 'sudo apt-get install $CHECK_PACKAGES'."
-  sudo apt-get install $CHECK_PACKAGES
+  sudo apt-get install -y $CHECK_PACKAGES
 fi
 
 # Setup virtual environment for certbot.
 cd $ROOT
-sudo apt-get install python3-dev python3-venv gcc libaugeas0 libssl-dev libffi-dev ca-certificates openssl
+sudo apt-get install -y python3-dev python3-venv gcc libaugeas0 libssl-dev libffi-dev ca-certificates openssl
 python3 tools/venv3.py
 
 # Link installed certbot version, so it can used everywhere.

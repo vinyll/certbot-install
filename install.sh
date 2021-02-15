@@ -19,7 +19,7 @@ fi
 # Setup virtual environment for certbot.
 cd $ROOT
 sudo apt-get install -y python3-dev python3-venv gcc libaugeas0 libssl-dev libffi-dev ca-certificates openssl
-python3 tools/venv3.py
+python3 tools/venv.py
 
 # Link installed certbot version, so it can used everywhere.
-sudo ln -s $ROOT/venv3/bin/certbot /usr/local/bin/
+sudo ln -s $ROOT/venv/bin/certbot /usr/local/bin/

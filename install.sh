@@ -9,7 +9,7 @@ rm -rf $ROOT
 git clone https://github.com/certbot/certbot $ROOT
 
 # Check if python3-venv is installed, and install it otherwise.
-CHECK_PACKAGES='python3-venv'
+CHECK_PACKAGES='python3-venv git'
 if ! dpkg -s $CHECK_PACKAGES >/dev/null 2>&1; then
   echo "The packages '$CHECK_PACKAGES' are not installed. "
   echo "They will now be installed automatically with 'sudo apt-get install $CHECK_PACKAGES'."

@@ -5,6 +5,9 @@ ROOT=~/.certbot-src
 # Remove older versions if existing, for a simple re-install/update.
 rm -rf $ROOT
 
+# Creating the directory
+mkdir -p $ROOT
+
 # Clone certbot source.
 git clone https://github.com/certbot/certbot $ROOT
 

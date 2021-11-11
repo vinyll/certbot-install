@@ -1,5 +1,7 @@
 # Certbot installer
 
+This process is still valid for Ubuntu 21.04 / 21.10.
+
 Install latest version of [certbot](https://github.com/certbot/certbot).
 
 This makes Certbot work on Ubuntu 20.04 Focal. Probably for latest Debian as well.

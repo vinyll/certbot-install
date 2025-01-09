@@ -2,7 +2,8 @@
 
 Install latest version of [certbot](https://github.com/certbot/certbot).
 
-This makes Certbot is useful since Ubuntu 20.04 Focal. Probably for latest Debian as well and is also valid for Ubuntu 21.04 / 21.10.
+This makes Certbot is useful with the latest Ubuntu.
+Probably for latest Debian as well and is also valid for older Ubuntu 21.04 / 21.10.
 
 
 ## How to Install
@@ -23,10 +24,10 @@ curl -o- https://raw.githubusercontent.com/vinyll/certbot-install/master/uninsta
 
 You may prefer the regular installation of certbot from official PPA.
 
-However, if you experiment [the following error with Ubuntu Focal 20.04](https://github.com/certbot/certbot/issues/7951), this install should solve.
+However, if you experiment [the following error with some Ubuntu releases](https://github.com/certbot/certbot/issues/7951), this install will prevent and solve.
 
 ```
 AttributeError: module 'acme.challenges' has no attribute 'TLSSNI01'
 ```
 
-This is also interesting if you need to work with the latest release of certbot.
+This is also interesting if you need to work with the latest release of certbot at all.

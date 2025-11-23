@@ -2,7 +2,7 @@
 
 Install latest version of [certbot](https://github.com/certbot/certbot).
 
-This makes Certbot is useful with the latest Ubuntu.
+This makes Certbot is useful with the latest Ubuntu—still very helpful with Ubuntu25.10.
 Probably for latest Debian as well and is also valid for older Ubuntu 21.04 / 21.10.
 
 
